@@ -22,7 +22,7 @@ set shiftwidth=4    " autoindent number of spaces
 set showcmd         " display incomplete command in lower right corner
 set showmode        " always show the current mode
 set smartcase       " lowercase query is case insensitive
-set statusline+=%F  " add full path to status line
+set statusline+=%F\ %m  " add full path and file modified flag to status line
 set tabstop=4       " tab number of spaces
 set wildmode=list:longest   " autocomplete, list all matches and complete longest common string
 set wrap            " wrap long lines
