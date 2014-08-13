@@ -1,6 +1,7 @@
 set nocompatible    " not Vi backward-compatible
 filetype plugin indent on   " turn on file-extension specific Vim plugins and indentation
 syntax on           " enable syntax highlighting
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 set autoindent      " use the indent of the previous line for a newly created line
 set autoread        " updates file when altered externally
