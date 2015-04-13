@@ -1,7 +1,9 @@
-set nocompatible    " not Vi backward-compatible
+set nocompatible            " not Vi backward-compatible
 filetype plugin indent on   " turn on file-extension specific Vim plugins and indentation
-syntax on           " enable syntax highlighting
+syntax on                   " enable syntax highlighting
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
+autocmd BufWinLeave *.xml mkview            " save folds in xml files
+autocmd BufWinEnter *.xml silent loadview   " autoload previous folds in xml files
 
 set autoindent      " use the indent of the previous line for a newly created line
 set autoread        " updates file when altered externally
@@ -10,6 +12,7 @@ set cursorcolumn    " highlight the column where the cursor is
 set cursorline      " highlight the line where the cursor is
 set encoding=utf-8  " character encoding
 set expandtab       " insert tabs as spaces
+set fdm=indent      " indentation defines folds
 set hidden          " when a buffer is abandoned, it becomes hidden but not unloaded
 set history=999     " command line history
 set hls             " highlight search results
