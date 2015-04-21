@@ -22,6 +22,7 @@ set laststatus=2    " always display the status line
 set number          " show line numbers
 set ruler           " show cursor position in the status line
 set scrolloff=4     " lines always visible above and below the cursor
+set sessionoptions=buffers,sesdir " save buffer list during mksession
 set shiftwidth=4    " autoindent number of spaces
 set showcmd         " display incomplete command in lower right corner
 set showmode        " always show the current mode
