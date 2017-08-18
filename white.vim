@@ -6,6 +6,6 @@ autocmd BufEnter * highlight StatusLineNC ctermfg=LightGray ctermbg=DarkGray cte
 autocmd BufEnter * highlight CursorColumn ctermbg=LightMagenta
 autocmd BufEnter * highlight CursorLine ctermbg=LightMagenta cterm=none
 autocmd BufEnter * highlight Search ctermbg=DarkRed ctermfg=White cterm=none
-autocmd BufEnter *.js colorscheme pablo
-autocmd BufEnter *.js highlight CursorColumn ctermbg=Blue
-autocmd BufEnter *.js highlight CursorLine ctermbg=Blue cterm=none
+autocmd BufEnter *.js colorscheme default
+autocmd BufEnter *.js highlight CursorColumn ctermbg=LightBlue
+autocmd BufEnter *.js highlight CursorLine ctermbg=LightBlue cterm=none
