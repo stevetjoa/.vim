@@ -1,6 +1,8 @@
 set nocompatible            " not Vi backward-compatible
 filetype plugin indent on   " turn on file-extension specific Vim plugins and indentation
 syntax on                   " enable syntax highlighting
+autocmd! VimLeavePre * mksession!
+autocmd! VimEnter * source Session.vim
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "autocmd BufWinLeave *.xml mkview            " save folds in xml files
 "autocmd BufWinEnter *.xml silent loadview   " autoload previous folds in xml files
@@ -9,8 +11,8 @@ syntax on                   " enable syntax highlighting
 set autoindent      " use the indent of the previous line for a newly created line
 "set autoread        " updates file when altered externally
 set backspace=indent,eol,start  " allow backspace of text that was not typed during the current insert session
-"set cursorcolumn    " highlight the column where the cursor is
-"set cursorline      " highlight the line where the cursor is
+set cursorcolumn    " highlight the column where the cursor is
+set cursorline      " highlight the line where the cursor is
 set encoding=utf-8  " character encoding
 set expandtab       " insert tabs as spaces
 set hidden          " when a buffer is abandoned, it becomes hidden but not unloaded
