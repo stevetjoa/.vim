@@ -9,3 +9,6 @@ autocmd BufEnter * highlight Search ctermbg=DarkRed ctermfg=White cterm=none
 autocmd BufEnter *.js colorscheme default
 autocmd BufEnter *.js highlight CursorColumn ctermbg=LightBlue
 autocmd BufEnter *.js highlight CursorLine ctermbg=LightBlue cterm=none
+autocmd BufEnter *.json colorscheme default
+autocmd BufEnter *.json highlight CursorColumn ctermbg=LightBlue
+autocmd BufEnter *.json highlight CursorLine ctermbg=LightBlue cterm=none
