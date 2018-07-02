@@ -1,8 +1,9 @@
 set nocompatible            " not Vi backward-compatible
 filetype plugin indent on   " turn on file-extension specific Vim plugins and indentation
 syntax on                   " enable syntax highlighting
-autocmd! VimLeavePre * mksession!
-autocmd! VimEnter * source Session.vim
+"autocmd VimLeavePre * mksession! .session.vim
+autocmd VimLeavePre * if v:this_session != '' | exec "mks! " . v:this_session | endif
+"autocmd VimEnter * source .session.vim
 "autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 "autocmd BufWinLeave *.xml mkview            " save folds in xml files
 "autocmd BufWinEnter *.xml silent loadview   " autoload previous folds in xml files
